@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'rs.lukaj'
+version '0.9-BETA'
+mainClassName = "rs.lukaj.httpclient.Main"
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'rs.lukaj.httpclient.Main'
+    }
+}
+
+sourceCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.4.2')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.4.2')
+}
+
+test {
+    useJUnitPlatform()
+}

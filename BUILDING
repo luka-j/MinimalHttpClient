@@ -1,0 +1,10 @@
+Building jar: ./gradlew jar
+jar location: build/libs/httpclient-0.9-BETA.jar
+
+Running tests: ./gradlew test
+Report location: build/reports/tests/test/index.html
+
+Building javadoc: ./gradlew javadoc
+Docs location: build/docs/javadoc/index.html
+
+On Windows, use gradlew.bat instead of ./gradlew
